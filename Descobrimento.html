@@ -62,27 +62,82 @@
         .logo {
             position: absolute;
             background-color: rgb(20, 94, 20);
-            top: 5px;  /* Diminui a distância do topo */
-            left: 10px; /* Ajusta a distância da borda esquerda */
-            width: 100px; /* Aumenta o tamanho da imagem */
+            top: 5px;  
+            left: 10px; 
+            width: 100px; 
             margin-right: 20px;
-            height: auto; /* Mantém a proporção original */
+            height: auto; 
         }
         .top-frame {
-            position: relative; /* Mantém a posição relativa para os elementos dentro */
+            position: relative; 
             top: 0px;
-            height: 150px; /* Ajuste conforme necessário */
-            padding-left: 180px; /* Afasta o título da logo */
+            height: 150px; 
+            padding-left: 180px; 
         }
-
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #242323c4;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        
+        .home-button:hover {
+            background-color:  rgb(20, 94, 20);
+        }
+        
+        
+        .home-button:hover {
+            background-color:  rgb(20, 94, 20) 
+        }
+        .search-icon {
+            position: absolute;
+            top: 20px;
+            right: 100px; 
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #242323c4;
+        }
+        .search-button {
+            position: absolute;
+            top: 60px; 
+            right: 20px;
+            background-color: white;
+            color: #242323c4;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .search-button:hover {
+            background-color: rgb(20, 94, 20); 
+        }
     </style>
 </head>
 <body>
-
+    <header>
     <div class="top-frame">
         <img src="Logo.png"  alt="Logo" class="logo">
-        <h1>Descobrimento do Brasil</h1>
-    </div>
+        <a href="index.html" class="home-button">🏠 Home</a>
+        <button class="search-button">🔍</button>
+
+        <h1>Descobrimento do Brasil</h1></div>
+    </header>
 
     <div class="container">
         <h3>Introdução e Contexto Histórico</h3>
@@ -91,8 +146,9 @@
         <p>Esse evento aconteceu no contexto da Era das Descobertas, quando as potências europeias, especialmente Portugal e Espanha, buscavam novas rotas comerciais e terras desconhecidas. A expedição de Cabral, inicialmente voltada para o comércio com o Oriente, acabou se desviando da rota planejada e, devido a correntes marítimas e ventos, alcançou o litoral brasileiro. Esse desvio, embora não planejado, fez com que o Brasil fosse considerado uma nova terra a ser explorada por Portugal.</p>
     
         <div> 
-            <img src="ideias/barco.png" alt="Caravela portuguesa chegando ao Brasil">
-        </div>
+            <img src="CaravelaPortuguesa.png" alt="Caravela portuguesa chegando ao Brasil">
+            <abbr title="Caravela">Foto: Caravelas chegando ao Brasil</abbr>
+        </div><br>
 
         <p>A chegada de Cabral ao Brasil teve grande importância estratégica, já que o território brasileiro foi atribuído a Portugal pelo Tratado de Tordesilhas, de 1494. O Brasil, portanto, passou a ser parte do império colonial português, e a exploração do pau-brasil e o cultivo de cana-de-açúcar marcaram os primeiros ciclos econômicos da colônia.</p>
         <br>
@@ -101,19 +157,28 @@
         
         <div> 
             <img src="Missa.png" alt="Primeira missa no Brasil">
-        </div>
+            <abbr title="Missa">Foto: Primeira Missa no Brasil</abbr>
+        </div><br>
         <p>A primeira missa, aqui realizada, ocorreu no dia 26 de abril de 1500, e no dia 1º de maio a expedição partiu para a Índia. O primeiro nome do Brasil, como consta na carta de Pero Vaz de Caminha, foi Ilha de Vera Cruz.</p>
     </div>
     <div class="container">
     <h2> Você também pode se interessar!!</h2>
     <nav>
         <ul>
-            <li><a href = "Curiosidades.html">Curiosidades Sobre o Descobrimento do Brasil</a></li>
+            <li><a href = "Curiosidades.html">Curiosidades Sobre o Descobrimento do Brasil</a></li><br>
+            <li><a href="EvoluçãodoBrasil.html">Evolução do Território Brasileiro ao Longo do Tempo</a></li>
         </ul>
     </nav>
     </div>
+<body>
     <footer>
-        <p>&copy; 2025 Descobrimento do Brasil | Todos os direitos reservados.</p>
+        <p>&copy; 2025 Brasil do Futuro | Todos os direitos reservados.</p>
+        <p><button><ins>princípios editoriais</ins> <button><ins>política de privacidade</ins></button><button><ins>minha conta</ins></button><button><ins>anuncie conosco</ins></button></p><br>
+            <p><ins>Nos siga nas redes sociais</ins></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">📱</a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">✉️</a>
+          </div>
     </footer>
 
 </body>

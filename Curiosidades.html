@@ -22,10 +22,11 @@
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
+
         .top-frame {
             width: 100%;
             height: 150px;
-            background-color: rgb(20, 94, 20);
+            background-color:  rgb(20, 94, 20);
             text-align: center;
             padding: 20px;
             box-sizing: border-box;
@@ -35,6 +36,8 @@
             color: rgb(255, 251, 251);
             font-size: 35px;
             text-align: center;
+
+
         }
 
         img {
@@ -59,29 +62,87 @@
         .logo {
             position: absolute;
             background-color: rgb(20, 94, 20);
-            top: 5px;  /* Diminui a distância do topo */
-            left: 10px; /* Ajusta a distância da borda esquerda */
-            width: 100px; /* Aumenta o tamanho da imagem */
-            height: auto; /* Mantém a proporção original */
+            top: 5px;  
+            left: 10px; 
+            width: 100px; 
+            margin-right: 20px;
+            height: auto; 
         }
         .top-frame {
-            position: relative; /* Mantém a posição relativa para os elementos dentro */
+            position: relative; 
             top: 0px;
-            height: 150px; /* Ajuste conforme necessário */
-            padding-left: 180px; /* Afasta o título da logo */
+            height: 150px; 
+            padding-left: 180px; 
         }
-
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            color: #242323c4;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        
+        .home-button:hover {
+            background-color:  rgb(20, 94, 20);
+        }
+        
+        
+        .home-button:hover {
+            background-color:  rgb(20, 94, 20) 
+        }
+        .search-icon {
+            position: absolute;
+            top: 20px;
+            right: 100px; 
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #242323c4;
+        }
+        .search-button {
+            position: absolute;
+            top: 60px; 
+            right: 20px;
+            background-color: white;
+            color: #242323c4;
+            padding: 6px 12px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .search-button:hover {
+            background-color: rgb(20, 94, 20); 
+        }
     </style>
 </head>
 <body>
+    <header>
 <div class="top-frame">
     <img src="Logo.png"  alt="Logo" class="logo">
+    <a href="index.html" class="home-button">🏠 Home</a>
+    <button class="search-button">🔍</button>
+
     <h1>Curiosidades sobre o descobrimento do Brasil</h1></div>
+</header>
     <div class="container">
         <h3>Saiba alguma das curiosidades a respeito do descobrimento do Brasil</h3>
         
         <img src="Curiosidades.png" alt="Curiosidades"> <br>
-        
+        <abbr title="Porugueses">Foto: Retorno dos Portugueses</abbr><br>
         <ul>
             <li>O pagamento de Pedro Álvares Cabral foi de 10 mil cruzados (o equivalente a 35 quilos de ouro). Ele também poderia comprar e vender 30 toneladas de pimenta e 10 caixas de outra especiaria. Um marinheiro comum, por sua vez, ganhava 10 cruzados mensalmente, além de 10 quintais de pimenta.</li><br>
             <li>Era comum que, nessas expedições marítimas da Idade Moderna, prostitutas fossem levadas escondidas nas embarcações.</li><br>
@@ -98,7 +159,14 @@
 </div>
 <body>
     <footer>
-        <p>&copy; 2025 Descobrimento do Brasil | Todos os direitos reservados.</p>
+        <p>&copy; 2025 Brasil do Futuro | Todos os direitos reservados.</p>
+        <p><button><ins>princípios editoriais</ins> <button><ins>política de privacidade</ins></button><button><ins>minha conta</ins></button><button><ins>anuncie conosco</ins></button></p><br>
+            <p><ins>Nos siga nas redes sociais</ins></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">📱</a>
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">✉️</a>
+          </div>
+          
     </footer> 
 </body>
 </html>
